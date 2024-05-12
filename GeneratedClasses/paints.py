@@ -22,10 +22,10 @@ class Ui_Paints(object):
     def setupUi(self, Paints):
         if not Paints.objectName():
             Paints.setObjectName(u"Paints")
-        Paints.resize(454, 352)
+        Paints.resize(413, 279)
         self.label_8 = QLabel(Paints)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setGeometry(QRect(30, 30, 181, 21))
+        self.label_8.setGeometry(QRect(20, 30, 311, 31))
         font = QFont()
         font.setPointSize(13)
         self.label_8.setFont(font)
@@ -57,7 +57,7 @@ class Ui_Paints(object):
         self.label_10.setGeometry(QRect(20, 210, 151, 16))
         self.outputPaintsWeight = QLabel(Paints)
         self.outputPaintsWeight.setObjectName(u"outputPaintsWeight")
-        self.outputPaintsWeight.setGeometry(QRect(170, 210, 55, 16))
+        self.outputPaintsWeight.setGeometry(QRect(160, 210, 111, 16))
         self.outputPaintsWeight.setTextFormat(Qt.RichText)
         self.label = QLabel(Paints)
         self.label.setObjectName(u"label")
@@ -70,7 +70,7 @@ class Ui_Paints(object):
 
     def retranslateUi(self, Paints):
         Paints.setWindowTitle(QCoreApplication.translate("Paints", u"Dialog", None))
-        self.label_8.setText(QCoreApplication.translate("Paints", u"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0434\u0430\u043d\u043d\u044b\u0435", None))
+        self.label_8.setText(QCoreApplication.translate("Paints", u"\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u044b \u043a\u0440\u0430\u0441\u043a\u0438", None))
         self.typeCmbx.setItemText(0, QCoreApplication.translate("Paints", u"\u0412\u044b\u0431\u0440\u0430\u0442\u044c", None))
         self.typeCmbx.setItemText(1, QCoreApplication.translate("Paints", u"\u0414\u043b\u044f \u043f\u043e\u0442\u043e\u043b\u043a\u0430", None))
         self.typeCmbx.setItemText(2, QCoreApplication.translate("Paints", u"\u041b\u0430\u0442\u0435\u043a\u0441\u043d\u0430\u044f \u043a\u0440\u0430\u0441\u043a\u0430", None))

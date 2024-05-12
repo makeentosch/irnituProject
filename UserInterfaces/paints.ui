@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>454</width>
-    <height>352</height>
+    <width>413</width>
+    <height>279</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,10 +16,10 @@
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>20</x>
      <y>30</y>
-     <width>181</width>
-     <height>21</height>
+     <width>311</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
@@ -28,7 +28,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Укажите данные</string>
+    <string>Укажите параметры краски</string>
    </property>
   </widget>
   <widget class="QComboBox" name="typeCmbx">
@@ -155,9 +155,9 @@
   <widget class="QLabel" name="outputPaintsWeight">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>160</x>
      <y>210</y>
-     <width>55</width>
+     <width>111</width>
      <height>16</height>
     </rect>
    </property>

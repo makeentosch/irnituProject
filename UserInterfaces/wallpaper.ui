@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>455</width>
-    <height>382</height>
+    <height>371</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,10 +16,10 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>20</x>
      <y>30</y>
-     <width>181</width>
-     <height>21</height>
+     <width>291</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
@@ -28,77 +28,77 @@
     </font>
    </property>
    <property name="text">
-    <string>Укажите данные</string>
+    <string>Укажите параметры обоев</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>70</y>
-     <width>55</width>
+     <x>20</x>
+     <y>80</y>
+     <width>71</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Ширина</string>
+    <string>Ширина, м</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>70</y>
-     <width>55</width>
+     <x>120</x>
+     <y>80</y>
+     <width>101</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Высота</string>
+    <string>Длина рулона, м</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>70</y>
-     <width>55</width>
+     <x>250</x>
+     <y>80</y>
+     <width>71</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Раппорт</string>
+    <string>Раппорт, м</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>70</y>
+     <x>350</x>
+     <y>80</y>
      <width>55</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Запас</string>
+    <string>Запас, м</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="inputWidth">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>90</y>
-     <width>61</width>
+     <y>100</y>
+     <width>71</width>
      <height>21</height>
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="inputHeight">
+  <widget class="QLineEdit" name="inputLength">
    <property name="geometry">
     <rect>
      <x>110</x>
-     <y>90</y>
-     <width>51</width>
+     <y>100</y>
+     <width>111</width>
      <height>21</height>
     </rect>
    </property>
@@ -106,9 +106,9 @@
   <widget class="QLineEdit" name="inputRapport">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>90</y>
-     <width>51</width>
+     <x>240</x>
+     <y>100</y>
+     <width>81</width>
      <height>21</height>
     </rect>
    </property>
@@ -116,9 +116,9 @@
   <widget class="QLineEdit" name="inputReserve">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>90</y>
-     <width>51</width>
+     <x>340</x>
+     <y>100</y>
+     <width>71</width>
      <height>21</height>
     </rect>
    </property>
@@ -126,8 +126,8 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>150</y>
+     <x>20</x>
+     <y>140</y>
      <width>121</width>
      <height>31</height>
     </rect>
@@ -145,11 +145,16 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>190</y>
+     <y>180</y>
      <width>231</width>
      <height>22</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Выбрать</string>
+    </property>
+   </item>
    <item>
     <property name="text">
      <string>Обои Флизелиновые, стандарт</string>
@@ -189,21 +194,21 @@
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>320</y>
+     <x>20</x>
+     <y>310</y>
      <width>131</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Количество клея:</string>
+    <string>Количество клея (г):</string>
    </property>
   </widget>
   <widget class="QLabel" name="outputWpCount">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>290</y>
+     <x>160</x>
+     <y>280</y>
      <width>55</width>
      <height>16</height>
     </rect>
@@ -219,7 +224,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>240</y>
+     <y>230</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -231,8 +236,8 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>290</y>
+     <x>20</x>
+     <y>280</y>
      <width>131</width>
      <height>16</height>
     </rect>
@@ -244,9 +249,9 @@
   <widget class="QLabel" name="outputGlueCount">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>320</y>
-     <width>55</width>
+     <x>140</x>
+     <y>310</y>
+     <width>121</width>
      <height>16</height>
     </rect>
    </property>
