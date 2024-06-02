@@ -25,19 +25,27 @@ class MainWindow(QMainWindow):
         room_height = float(self.ui.inputHeight.text())
 
         # Обработка данных о двери
-        door_type = self.ui.doorCmbx.currentText()
-        door_params = self.cursor.execute("""SELECT width, height FROM doors WHERE title = (?)""",
-                                          (door_type,)).fetchone()
-        door_width = door_params[0]
-        door_height = door_params[1]
+        if self.ui.inputDoorWidth.text() != "" and self.ui.inputDoorHeight.text() != "":
+            door_width = int(self.ui.inputDoorWidth.text())
+            door_height = int(self.ui.inputDoorHeight.text())
+        else:
+            door_type = self.ui.doorCmbx.currentText()
+            door_params = self.cursor.execute("""SELECT width, height FROM doors WHERE title = (?)""",
+                                              (door_type,)).fetchone()
+            door_width = door_params[0]
+            door_height = door_params[1]
         doors_count = int(self.ui.doorsCount.text())
 
         # Обработка данных об окне
-        window_type = self.ui.windowCmbx.currentText()
-        window_params = self.cursor.execute("""SELECT width, height FROM windows WHERE title = (?)""",
-                                            (window_type,)).fetchone()
-        window_width = window_params[0]
-        window_height = window_params[1]
+        if self.ui.inputWindowWidth.text() != "" and self.ui.inputWindowHeight.text() != "":
+            window_width = int(self.ui.inputWindowWidth.text())
+            window_height = int(self.ui.inputWindowHeight.text())
+        else:
+            window_type = self.ui.windowCmbx.currentText()
+            window_params = self.cursor.execute("""SELECT width, height FROM windows WHERE title = (?)""",
+                                                (window_type,)).fetchone()
+            window_width = window_params[0]
+            window_height = window_params[1]
         windows_count = int(self.ui.windowsCount.text())
 
         doors_square = door_width * door_height * doors_count / 1000000

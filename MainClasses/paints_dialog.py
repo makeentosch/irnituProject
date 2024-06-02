@@ -17,7 +17,7 @@ class PaintsDialog(QDialog):
 
         paints_weight = self.cursor.execute("SELECT weight FROM paints WHERE title = (?)",
                                             (paints_type,)).fetchone()[0]
-        result = room_square / paints_weight * 1000
+        result = room_square * paints_weight * 1000
         result = round(result, 2)
         self.cursor.execute("UPDATE rooms SET paints_weight = :res WHERE id = (SELECT MAX(id) FROM rooms)",
                             {"res": result})
